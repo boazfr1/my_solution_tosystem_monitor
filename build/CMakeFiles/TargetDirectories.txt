@@ -1,0 +1,3 @@
+/home/hilma/development/c++/udacity-course/System-monitor-project/build/CMakeFiles/monitor.dir
+/home/hilma/development/c++/udacity-course/System-monitor-project/build/CMakeFiles/edit_cache.dir
+/home/hilma/development/c++/udacity-course/System-monitor-project/build/CMakeFiles/rebuild_cache.dir
