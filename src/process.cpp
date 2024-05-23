@@ -3,6 +3,7 @@
 #include <sstream>
 #include <string>
 #include <vector>
+#include <iostream>
 
 #include "process.h"
 #include "linux_parser.h"
@@ -12,7 +13,10 @@ using std::to_string;
 using std::vector;
 
 void Process::setPid(int pid){
-    this->Pid_ = pid;
+    if (pid >= 0)
+    {
+        this->Pid_ = pid;
+    }
 }
 
 // TODO: Return this process's ID

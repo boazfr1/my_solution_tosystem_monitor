@@ -22,23 +22,17 @@ Processor& System::Cpu() {
 }
 
 
-
 // TODO: Return a container composed of the system's processes
 vector<Process>& System::Processes() {
   vector<int> holderProcesses = LinuxParser::Pids();
-  
+
   for (int processNumber : holderProcesses) {
     Process process;
     process.setPid(processNumber);
     processes_.push_back(process);
-  }
-      std::cout << "hi boaz frid 1 " << "\n";
 
-  for(auto i : processes_){
-    std::cout << "i.Pid()" << i.Pid() << "\n";
   }
-        std::cout << "hi boaz frid 2 " << "\n";
-
+  std::cout << "processes_.size() = " << processes_.size() << "\n"; 
   return processes_; 
 }
 

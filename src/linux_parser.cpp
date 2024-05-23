@@ -50,7 +50,6 @@ string LinuxParser::Kernel() {
 
 // BONUS: Update this to use std::filesystem
 vector<int> LinuxParser::Pids() {
-  std::cout << "vector<int> LinuxParser::Pids1\n"; 
   vector<int> pids;
   DIR* directory = opendir(kProcDirectory.c_str());
   struct dirent* file;
@@ -65,8 +64,6 @@ vector<int> LinuxParser::Pids() {
       }
     }
   }
-    std::cout << "vector<int> LinuxParser::Pids2\n"; 
-
   closedir(directory);
   return pids;
 }
